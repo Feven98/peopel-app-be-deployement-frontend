@@ -1,0 +1,36 @@
+.people-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
+}
+
+.spinner {
+  width: 24px;
+  animation: loading infinite 3s linear;
+}
+
+.people-list a{
+  text-decoration: none;
+  color: rgb(37, 3, 3);
+}
+
+.person-card {
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+text-align: center;
+border-radius: 10px;
+}
+/* .person-card img{
+  max-height:  200px;
+} */
+
+@keyframes loading{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
